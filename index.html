@@ -1,0 +1,67 @@
+<div id="encabezado"></div>
+
+<hr />
+
+<!-- Formulario informativo -->
+<div id="formularioItem">
+  <label>ID: <input id="infoId" readonly /></label>
+  <label>ID Item: <input id="infoIdItem" readonly /></label>
+  <label>Nivel: <input id="infoNivel" readonly /></label>
+  <label>Item: <input id="infoItem" readonly /></label>
+  <label>Descripción: <input id="infoDescripcion" readonly /></label>
+  <label>Unidad: <input id="infoUnidad" readonly /></label>
+  <label>Coef.: <input id="inputCoef" /></label>
+  <label>Rend.: <input id="inputRend" /></label>
+  <label>Jornada: <input id="inputJornada" /></label>
+</div>
+
+<!-- Tabla de APU -->
+<table id="tablaAPU">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>UN.</th>
+      <th>Asignación</th>
+      <th>Cantidad</th>
+      <th>CU</th>
+      <th>Subtotal</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Las filas se cargan dinámicamente desde JS -->
+  </tbody>
+</table>
+
+<div id="acciones">
+  <button id="btnInsertar">➕ Agregar recurso</button>
+  <button id="btnGuardar">💾 Guardar cambios</button>
+</div>
+
+<div id="panelCostos">
+  <div class="costo-item">
+    <label>Costo Mano de Obra</label><input id="costoTipo1" readonly />
+  </div>
+  <div class="costo-item">
+    <label>Costo Materiales</label><input id="costoTipo2" readonly />
+  </div>
+  <div class="costo-item">
+    <label>Costo Transporte Materiales</label><input id="costoTipo3" readonly />
+  </div>
+  <div class="costo-item">
+    <label>Costo Amortización de Equipos</label
+    ><input id="costoTipo4" readonly />
+  </div>
+  <div class="costo-item">
+    <label>Costo Reparación de Equipos</label><input id="costoTipo5" readonly />
+  </div>
+  <div class="costo-item">
+    <label>Costo Combustible de Equipos</label
+    ><input id="costoTipo6" readonly />
+  </div>
+  <div class="costo-item">
+    <label><strong>Costo Tarea</strong></label
+    ><input id="costoTarea" readonly />
+  </div>
+</div>
+<div id="mensaje"></div>
